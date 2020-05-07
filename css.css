@@ -1,0 +1,104 @@
+body,
+html {
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  background-image: url("images/bg-desktop.svg");
+  background-repeat: no-repeat;
+  background-color: hsl(257, 40%, 49%);
+}
+
+.inlineblock {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.smallscreen {
+  display: none;
+}
+
+.logo {
+  margin-top: 35px;
+  margin-left: 50px;
+}
+
+.Mockups {
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.text {
+  margin-top: 250px;
+  margin-left: 5px;
+  color: rgb(255, 255, 255);
+  line-height: 1.5;
+  letter-spacing: 1.1px;
+}
+
+h3 {
+  font-size: 15px;
+  font-family: "Open Sans";
+  font-weight: 400;
+}
+
+button {
+  width: 150px;
+  padding: 13px 10px 13px 10px;
+  border-style: none;
+  border-radius: 15px;
+  background-color: rgb(255, 255, 255);
+  color: hsl(257, 40%, 49%);
+}
+
+div i {
+  border-style: solid;
+  border-width: thin;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 5px;
+}
+
+.social-media {
+  margin-top: 80px;
+  margin-left: 300px;
+}
+@media only screen and (max-width: 375px) {
+  .inlineblock {
+    display: block;
+  }
+  .logo {
+    margin-top: -15px;
+    margin-left: 30px;
+    height: 100px;
+    width: 100px;
+  }
+
+  .Mockups {
+    margin-top: -10px;
+    height: 200px;
+    width: 300px;
+    margin-left: 30px;
+  }
+  .text {
+    margin-top: 20px;
+  }
+  .bigscreen {
+    display: none;
+  }
+  .smallscreen {
+    display: block;
+    text-align: center;
+  }
+  div .text h1 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+  button {
+    margin-top: 10px;
+    margin-left: 100px;
+  }
+  .social-media {
+    display: flex;
+    margin-top: 60px;
+    margin-left: 100px;
+  }
+}
